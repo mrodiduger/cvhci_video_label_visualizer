@@ -123,7 +123,7 @@ def process_video(video_path, numeric_label_str, start_sec, end_sec, subject, ca
 
 def main():
     parser = argparse.ArgumentParser(description="Label videos based on a CSV file.")
-    parser.add_argument("--csv_file", help="Path to the input CSV file.")
+    parser.add_argument("csv_file", help="Path to the input CSV file.")
     parser.add_argument("--output_dir", default="output_videos", help="Directory to save processed videos (default: output_videos).")
     parser.add_argument("--video_base_dir", default=None, help="Optional base directory to prepend to video paths in the CSV.")
     parser.add_argument("--video_suffix", default=None, help="Optional suffix to append to video paths (e.g., '.mp4').")
